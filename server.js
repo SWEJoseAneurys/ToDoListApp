@@ -28,11 +28,6 @@ app.get('/test_route', (req,res) => {
 });
 
 
-app.get("/user", (req,res) => {
-    res.send("user folder!")
-});
-
-
 app.get('/*', function(req, res) {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
   });
