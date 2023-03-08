@@ -53,8 +53,8 @@ app.get('/get_tasks', async (req, res) => {
     res.json(response);
 });
 
-//UPDATE TASKS - Mark task as completed
-app.put('/update_task/:taskId', async (req, res) => {
+//UPDATE TASKS - COMPLETED - Mark task as completed
+app.put('/completed_task/:taskId', async (req, res) => {
     let response = await MyTask.findByIdAndUpdate(req.params.taskId, {completed:true}, {new: true});
     console.log(response);
     res.json(response)

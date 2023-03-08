@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# To-Do List App  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction  
 
-## Available Scripts
+Ever feel like you’ve got a ton of things to do, but you cant remember one of them? Feel the pressure of getting important things done, but cant even think of a single task that feels important when you ask yourself “Is this what it was”? Well, fear no more! Here is the **To-Do List App** that will help you remember and complete all of your important tasks!  
+[![HXK9lyP.md.png](https://iili.io/HXK9lyP.md.png)](https://to-do-list-ix6t.onrender.com)
 
-In the project directory, you can run:
+## Technologies Used  
 
-### `npm start`
+The **To-Do List App** was created using React via Microsoft Visual Studio Code. The coding language of preference to create this app was JavaScript. Our data is stored in MongoDB.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+For use of this app, feel free to clone it yourself using my [repo link](https://github.com/SWEJoseAneurys/ToDoListApp.git). With this link, you’ll be able to use my development as a template to create your own app and design it in ways that work best for you! Otherwise, feel free to utilize the live app as is today!  
+[Check out the To-Do List App](https://to-do-list-ix6t.onrender.com)  
 
-### `npm test`
+## Unsolved Problems  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+None at the moment.  
 
-### `npm run build`
+## Future Enhancements  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Coming in our later versions, you will be able to prioritize tasks! Set level of important and prioritize your tasks when you create them, and they will appear at the top of your list.  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Thank You
+Once again, feel free to visit and use the To-Do List App via this [link](https://to-do-list-ix6t.onrender.com).

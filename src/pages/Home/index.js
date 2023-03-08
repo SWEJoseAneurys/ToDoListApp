@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Home = () => {
 
     const [tasks, setTasks] = useState([]);
-    console.log(tasks);
+
     useEffect(() => {
         const getData = async () => {
           let response = await axios('/get_tasks')
@@ -20,55 +20,57 @@ const Home = () => {
         getData()
       }, [])
     
-      const tasksJSX = tasks.map((task) => {
-        return (
-            <Card className='m-3' style={{ border: 'none'}}>
-                <Card.Body>
-                    <li
-                    key={task._id}
-                    className={task.completed ? "task strike" : "task"}
-                    >
-                    {task.task} <br />
-                    <Button
-                    className='mark-complete, m-1'
-                    onClick={() => handleComplete(task._id)}
-                    >
-                    completed!
-                    </Button>
-                    <Button
-                    className='delete'
-                    onClick={() => handleDelete(task._id)}
-                    >
-                    delete
-                    </Button>
-                    </li>
-                </Card.Body>
-            </Card>
-        )
-      })
+    const tasksJSX = tasks.map((task) => {
+    return (
+        <Card className='m-3' style={{ border: 'none'}}>
+            <Card.Body>
+                <li
+                key={task._id}
+                className={task.completed ? "task strike" : "task"}
+                >
+                {task.task} <br />
+                <Button
+                className='m-1'
+                variant='success'
+                size='sm'
+                onClick={() => handleComplete(task._id)}
+                >
+                completed!
+                </Button>
+                <Button
+                className='delete'
+                variant='danger'
+                size='sm'
+                onClick={() => handleDelete(task._id)}
+                >
+                delete
+                </Button>
+                </li>
+            </Card.Body>
+        </Card>
+    )
+    })
 
-      const handleComplete = async (taskId) => {
-        let response = await axios({
-            method: "PUT",
-            url: `/update_task/${taskId}`,
-        })
-        let tasksCopy = [...tasks]
-        tasksCopy.forEach((task) => {
-            if (task._id == taskId) {
-                task.completed = true
-            }
-        })
-        setTasks(tasksCopy)
+    const handleComplete = async (taskId) => {
+    let response = await axios({
+        method: "PUT",
+        url: `/completed_task/${taskId}`,
+    })
+    let tasksCopy = [...tasks]
+    tasksCopy.forEach((task) => {
+        if (task._id == taskId) {
+            task.completed = true
         }
+    })
+    setTasks(tasksCopy)
+    }
 
-      const handleDelete = async (taskId) => {
-        let response = await axios({
-            method: "DELETE",
-            url: `/delete/${taskId}`,
-        })
-        }
-
-
+    const handleDelete = async (taskId) => {
+    let response = await axios({
+        method: "DELETE",
+        url: `/delete/${taskId}`,
+    })
+    }
 
   return (
     <div>
@@ -76,7 +78,7 @@ const Home = () => {
         <Taskbar />
         <div>
             {/* put tasks JSX here */}
-            {tasksJSX}
+            <h4>{tasksJSX}</h4>
         </div>
     </div>
   )
